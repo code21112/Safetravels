@@ -35,3 +35,202 @@ height: auto; */
 #input-search {
     font-size: 10px;
 }
+
+.blog-title {
+    color: grey;
+    text-decoration: none;
+}
+
+
+/* FOR GREENSOCK */
+
+/* body {
+    margin: 0;
+    padding: 0; */
+    /* technique de l'opacité */
+    /* opacity: 0; */
+/* } */
+
+html {
+    box-sizing: border-box;
+}
+
+.intro-container {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: #141414;
+    transition: all 0.4s linear;
+    overflow: hidden;
+}
+
+.containerMenu {
+    display: flex;
+}
+
+/* .item {
+    flex-grow: 1;
+    text-align: center;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 35px;
+    color: #fff;
+    font-family: 'cinzel';
+    z-index: 3;
+} */
+
+.containerAccueil {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.titre {
+    flex-basis: 50%;
+    height: 100%;
+}
+
+.imgItem {
+    flex-basis: 50%;
+    height: 100%;
+}
+
+
+.sphere {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+/* h1{
+    color: #f1f1f1;
+    position: relative;
+    word-wrap: none;
+    font-size: 160px;
+    letter-spacing: 10px;
+    white-space: nowrap;
+    font-family: 'Cinzel';
+    top: 33%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+} */
+
+
+/* .firstH1 {
+position: relative;
+opacity: 1;
+}
+
+.firstH1 {
+position: relative;
+opacity: 1;
+} */
+
+.ligne1 {
+    position: relative;
+    margin-top: 40px;
+    width: 0%;
+    height: 4px;
+    background: #000;
+}
+
+.ligne2 {
+    position: absolute;
+    height: 0%;
+    width: 4px;
+    top: 0;
+    margin-left: 41px;
+    background: #000;
+}
+
+/* Medias queries */
+
+
+@media only screen and (max-width: 1600px) {
+    .sphere {
+        width: 500px;
+    }
+
+    h1 {
+        font-size: 120px;
+        left: 60%;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+
+    h1 {
+        font-size: 90px;
+    }
+
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+    .intro-container {
+        
+        left: 0!important;
+        right: 0!important;
+        bottom: 30px!important;
+        top: 0!important;
+        height: 70%;
+
+    }
+    .ligne2 {
+        display: none;
+    }
+
+    .containerAccueil {
+        flex-direction: column;
+    }
+
+    .item {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    h1 {
+        text-align: center;
+        left: 0;
+        transform: translate(0%, 0%);
+        top: 5%;
+    }
+
+    .sphere{
+        width: 300px;
+        top: 50%!important;
+        left: 50%!important;
+        margin: 0 auto!important;
+        position: relative!important;
+        transform: translate(-50%, -70%)!important;
+        display: inline-block!important;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .intro-container {
+        height: 60%!important;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    .sphere {
+        width: 250px;
+       
+    }
+
+    .item {
+        font-size: 11px;
+    }
+}

@@ -17,8 +17,9 @@ class MyDocument extends Document {
                         href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossOrigin="anonymous"
                     />
                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.css" />
-                    {/* <link rel="stylesheet" href="/static/css/styles.css" /> */}
-
+                    <link rel="stylesheet" href="../static/css/styles.css" />
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+                    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet" />
                 </Head>
                 <body>
                     <Main />

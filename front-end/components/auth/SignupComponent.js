@@ -77,7 +77,7 @@ const SignupComponent = () => {
                     <input value={password} onChange={handleChange('password')} type="password" className="form-control" placeholder="Type your password" />
                 </div>
                 <div>
-                    <button className="btn btn-primary">Signup</button>
+                    <button className="btn btn-dark">Signup</button>
                 </div>
             </form>
         )

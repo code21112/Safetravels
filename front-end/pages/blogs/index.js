@@ -111,7 +111,7 @@ const Blogs = ({ blogs, categories, tags, totalBlogs, blogsLimit, blogsSkip, rou
     const loadMoreButton = () => {
         return (
             size > 0 && size >= limit &&
-            (<button onClick={loadMoreBlogs} className="btn btn-primary btn-lg">Load more</button>)
+            (<button onClick={loadMoreBlogs} className="btn btn-dark btn-lg">Load more</button>)
         )
     }
 
@@ -142,7 +142,7 @@ const Blogs = ({ blogs, categories, tags, totalBlogs, blogsLimit, blogsSkip, rou
         if (categories) {
             return categories.map((c, i) => (
                 <Link href={`/categories/${c.slug}`} key={i}>
-                    <a className="btn btn-primary mr-1 ml-1 mt-3">{c.name}</a>
+                    <a className="btn btn-dark mr-1 ml-1 mt-3">{c.name}</a>
                 </Link>
             ));
         }
@@ -175,7 +175,7 @@ const Blogs = ({ blogs, categories, tags, totalBlogs, blogsLimit, blogsSkip, rou
         return tags.map((tag, index) => {
             return (
                 <Link key={index} href={`/tags/${tag.slug}`}>
-                    <a className="btn btn-outline-primary mr-1 ml-1 mt-3">{tag.name}</a>
+                    <a className="btn btn-outline-dark mr-1 ml-1 mt-3">{tag.name}</a>
                 </Link>
             )
         })

@@ -91,7 +91,7 @@ const SingleBlog = ({ blog, query }) => {
         // console.log('blog.categories in showBlogCategories', blog.categories)
         blog.categories.map((category, index) => (
             <Link href={`/categories/${category.slug}`} key={index}>
-                <a className="btn btn-primary mr-1 ml-1 mt-3 mb-3">{category.name}</a>
+                <a className="btn btn-dark mr-1 ml-1 mt-3 mb-3">{category.name}</a>
             </Link>
         ))
 
@@ -101,7 +101,7 @@ const SingleBlog = ({ blog, query }) => {
         // console.log('blog.categories in showBlogCategories', blog.categories)
         return blog.tags.map((tag, index) => (
             <Link href={`/tags/${tag.slug}`} key={index}>
-                <a className="btn btn-outline-primary mr-1 ml-1 mt-3 mb-3">{tag.name}</a>
+                <a className="btn btn-outline-dark mr-1 ml-1 mt-3 mb-3">{tag.name}</a>
             </Link>
         ))
     }

@@ -10,7 +10,7 @@ const Card = ({ blog }) => {
         // console.log('blog.categories in showBlogCategories', blog.categories)
         blog.categories.map((category, index) => (
             <Link href={`/categories/${category.slug}`} key={index}>
-                <a className="btn btn-primary mr-1 ml-1 mt-3 mb-3">{category.name}</a>
+                <a className="btn btn-dark mr-1 ml-1 mt-3 mb-3">{category.name}</a>
             </Link>
         ))
 
@@ -20,7 +20,7 @@ const Card = ({ blog }) => {
         // console.log('blog.categories in showBlogCategories', blog.categories)
         return blog.tags.map((tag, index) => (
             <Link href={`/tags/${tag.slug}`} key={index}>
-                <a className="btn btn-outline-primary mr-1 ml-1 mt-3 mb-3">{tag.name}</a>
+                <a className="btn btn-outline-dark mr-1 ml-1 mt-3 mb-3">{tag.name}</a>
             </Link>
         ))
     }
@@ -31,12 +31,12 @@ const Card = ({ blog }) => {
                 <Link href={`/blogs/${blog.slug}`}>
                     <a>
                         {/* <h2 className="pt-3 pb-3 font-weight-bold">{blog.title}</h2> */}
-                        <h2 className="pt-3 pb-3 font-weight-bold">{blog.title}</h2>
+                        <h2 className="pt-3 pb-3 font-weight-bold blog-title text-decoration-none effect4">{blog.title}</h2>
                     </a>
                 </Link>
             </header>
             <section>
-                <p className="mark ml-1 pt-2 pb-2">
+                <p className="mark ml-1 pt-2 pb-2 text-decoration-none">
                     Written by: <Link href={`/profile/${blog.postedBy.username}`}><a>{blog.postedBy.username}</a></Link> | Last update: {moment(blog.updatedAt).fromNow()}
                     | Created: {moment(blog.createdAt).format('MMM DD YYYY h:mm A')}
 
@@ -81,7 +81,7 @@ const Card = ({ blog }) => {
 
                         </div>
                         <Link href={`/blogs/${blog.slug}`}>
-                            <a className="btn btn-outline-primary pt-2">Read more</a>
+                            <a className="btn btn-outline-dark pt-2">Read more</a>
                         </Link>
                     </section>
                 </div>

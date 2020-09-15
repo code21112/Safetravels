@@ -51,7 +51,7 @@ const Search = () => {
 
                 </div>
                 <div className="col-md-1 pl-1 pt-1" style={{ fontSize: '10px' }}>
-                    <button className="btn btn-block btn-outline-primary mt-1 ml-0" id="btn-search" type="submit">Search</button>
+                    <button className="btn btn-block btn-outline-dark mt-1 ml-0" id="btn-search" type="submit">Search</button>
                 </div>
             </div>
         </form >
