@@ -14,6 +14,7 @@ import DisqusThread from '../../components/DisqusThread';
 
 const SingleBlog = ({ blog, query }) => {
 
+
     const head = () => (
         <Head>
             <title>{blog.title} | {APP_NAME}</title>
@@ -84,6 +85,7 @@ const SingleBlog = ({ blog, query }) => {
 
     useEffect(() => {
         loadRelatedBlogs()
+
     }, [])
 
     const showBlogCategories = blog =>
@@ -135,9 +137,9 @@ const SingleBlog = ({ blog, query }) => {
                         <div className="container-fluid">
                             <div className="row">
                                 <div className="pl-5 col-md-3 ">
-                                    <section className="display-4 pb-3 pt-3 font-weight-bold ml-4">
+                                    {/* <section className="display-4 pb-3 pt-3 font-weight-bold ml-4">
                                         {renderHtml(blog.title)}
-                                    </section>
+                                    </section> */}
                                 </div>
                                 <div className="col-md-5 pl-0 pr-4">
                                     <section>

@@ -13,7 +13,7 @@ const Signin = ({ router }) => {
     }
     return (
         <Layout>
-            <h2 className="text-center pt-4 pb-4">Signin page</h2>
+            <h2 className="text-center pt-4 pb-4">Signin</h2>
             {/* <Link href="/signup">
                 <a>Signup</a>
             </Link> */}

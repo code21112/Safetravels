@@ -47,8 +47,8 @@ const AdminIndex = () => {
 
                         </div>
                         <div className="col-md-8">
-                            right
-                    </div>
+                            {/* right */}
+                        </div>
 
                     </div>
 

@@ -5,7 +5,7 @@ import SignupComponent from '../components/auth/SignupComponent';
 const Signup = () => {
     return (
         <Layout>
-            <h2 className="text-center pt-4 pb-4">Signup page</h2>
+            <h2 className="text-center pt-4 pb-4">Signup</h2>
             {/* <Link href="/">
                 <a>Home</a>
             </Link> */}

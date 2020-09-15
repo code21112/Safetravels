@@ -1,5 +1,5 @@
 #nprogress .bar {
-    height: 6px;
+    height: 3px;
 }
 
 .ql-editor {
@@ -44,28 +44,28 @@ height: auto; */
 
 /* FOR GREENSOCK */
 
-/* body {
+body {
     margin: 0;
-    padding: 0; */
+    padding: 0;
     /* technique de l'opacité */
     /* opacity: 0; */
-/* } */
+}
 
 html {
     box-sizing: border-box;
 }
 
-.intro-container {
+/* .introContainer {
     position: absolute;
     z-index: 2;
     left: 0;
     right: 0;
     bottom: 0;
     top: 0;
-    background: #141414;
-    transition: all 0.4s linear;
+    /* background: #141414; */
+    /* transition: all 0.4s linear;
     overflow: hidden;
-}
+} */ */
 
 .containerMenu {
     display: flex;
@@ -122,19 +122,22 @@ html {
 } */
 
 
-/* .firstH1 {
+ .firstH1 {
 position: relative;
 opacity: 1;
+margin-left: 20px;
+z-index: 3;
+} 
+
+.secondH1 {
+    z-index: 3;
+
 }
 
-.firstH1 {
-position: relative;
-opacity: 1;
-} */
 
 .ligne1 {
     position: relative;
-    margin-top: 40px;
+    margin-top: -40px;
     width: 0%;
     height: 4px;
     background: #000;
@@ -145,7 +148,7 @@ opacity: 1;
     height: 0%;
     width: 4px;
     top: 0;
-    margin-left: 41px;
+    margin-left: 10px;
     background: #000;
 }
 
@@ -166,7 +169,12 @@ opacity: 1;
 @media only screen and (max-width: 1250px) {
 
     h1 {
-        font-size: 90px;
+        font-size: 100px;
+    }
+    .sphere {
+        width: 250px;
+        margin-top: 200px;
+        transform: translate(-50%, -70%)!important;
     }
 
 }
@@ -174,7 +182,7 @@ opacity: 1;
 
 @media only screen and (max-width: 1000px) {
 
-    .intro-container {
+    .introContainer {
         
         left: 0!important;
         right: 0!important;
@@ -184,6 +192,10 @@ opacity: 1;
 
     }
     .ligne2 {
+        display: none;
+    }
+
+    .ligne1 {
         display: none;
     }
 
@@ -204,33 +216,46 @@ opacity: 1;
     }
 
     .sphere{
-        width: 300px;
-        top: 50%!important;
-        left: 50%!important;
-        margin: 0 auto!important;
-        position: relative!important;
+        width: 250px;
+        margin-top: 200px;
         transform: translate(-50%, -70%)!important;
-        display: inline-block!important;
     }
-
 }
+
+
 
 @media screen and (max-width: 500px) {
 
-    .intro-container {
+    .introContainer {
         height: 60%!important;
     }
 
     h1 {
-        font-size: 60px;
+        text-align: center;
+        left: 0;
+        transform: translate(0%, 0%);
+        top: 5%;
+
     }
 
     .sphere {
         width: 250px;
-       
+        margin-top: 200px;
+        transform: translate(-50%, -70%)!important;       
     }
 
     .item {
         font-size: 11px;
     }
+
+    .ligne2 {
+        display: none;
+    }
+
+    .ligne1 {
+        display: none;
+    }
 }
+
+
+
