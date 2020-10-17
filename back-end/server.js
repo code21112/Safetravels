@@ -14,7 +14,7 @@ const userRoutes = require('./routes/user');
 const categoryRoutes = require('./routes/category');
 const tagRoutes = require('./routes/tag');
 const formRoutes = require('./routes/form');
-
+// const DB = process.env.DATABASE_CLOUD.replace('<PASSWORD>', process.env.PASSWORD)
 
 // app under construction
 const app = express();
